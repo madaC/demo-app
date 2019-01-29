@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SuiteA" verbose="1">
+	<test name="Trial">
+		<groups>
+			<run>
+				<include name="Group_A" />
+				<exclude name="Group_B" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.microfocus.demoapp.tests.ui.TestSuiteA_TestNG_Selenium">
+				<methods>
+					<include name="testCase1" />
+					<include name="testCase2" />
+					<include name="testCase3" />
+				</methods>
+			</class>
+			<class name="com.microfocus.demoapp.tests.ui.TestSuiteB_TestNG_Selenium"/>
+		</classes>
+	</test>
+</suite>
