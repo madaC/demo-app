@@ -8,3 +8,4 @@ node {
     stage 'publish'
     sh 'make publish'
 }
+
